@@ -18,7 +18,7 @@ const Home = () => {
     try {
       setLoading(true);
       const userDetail = await axios.get(
-        "http://localhost:8080/api/user/getUser",
+        "https://bookstore-backend-zbwq.onrender.com/api/user/getUser",
         {
           headers: {
             authorization: "Bearer " + localStorage.getItem("token"), // getting user token from localstorage

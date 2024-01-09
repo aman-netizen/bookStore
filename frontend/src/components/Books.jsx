@@ -34,7 +34,7 @@ const Books = (props) => {
   const fetchBook = async () => {
     try {
       const book_data = await axios.get(
-        "http://localhost:8080/api/book/getbooks"
+        "https://bookstore-backend-zbwq.onrender.com/api/book/getbooks"
       );
       await setBooks(book_data.data.booksData);
       await setAllBooks(book_data.data.booksData);

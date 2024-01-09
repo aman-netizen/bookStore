@@ -40,7 +40,7 @@ const BookDetails = () => {
       } else {;
         setLoading(true);
         const response = await axios.post(
-          `http://localhost:8080/api/book/${id}/reviews`,
+          `https://bookstore-backend-zbwq.onrender.com/api/book/${id}/reviews`,
           details
         );
         setBook(response.data);
@@ -57,7 +57,7 @@ const BookDetails = () => {
     try {
       setLoading(true);
       const singleBook = await axios.get(
-        `http://localhost:8080/api/book/${id}`
+        `https://bookstore-backend-zbwq.onrender.com/api/book/${id}`
       );
       const singleBookdata = singleBook.data;
       setBook(singleBookdata);

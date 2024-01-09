@@ -44,5 +44,5 @@
   "devDependencies": {
     "tailwindcss": "^3.3.6"
   },
-  "proxy": "http://localhost:8080"
+  "proxy": "https://bookstore-backend-zbwq.onrender.com"
 }

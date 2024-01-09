@@ -28,7 +28,7 @@ const SignUp=()=> {
         toast.error("Enter All field");
       } else {
         const response = await axios.post(
-          "http://localhost:8080/api/user/register",
+          "https://bookstore-backend-zbwq.onrender.com/api/user/register",
           details
         );
         if (response.data.success) {
