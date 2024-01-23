@@ -3,6 +3,7 @@ import cors from "cors";
 import userRoute from './routes/userRoute.js'
 import bookRoute from './routes/bookRoute.js'
 import connect from "./config/db.js";
+const path = require("path");
 import { config } from "dotenv";
 const app = express();
 config({
