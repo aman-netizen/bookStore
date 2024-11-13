@@ -35,7 +35,7 @@ const Home = () => {
 
   useEffect(() => {
     if(localStorage.getItem("token")!==null && user===null) getUser(); // call only when token is present of user is null
-  }, []);
+  });
 
   // showing loading till data not completely fetched to show
   if (loading) {
